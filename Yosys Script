@@ -1,0 +1,12 @@
+# 1. Analyze Dense (Standard)
+read_verilog rtl/dense_pe.v
+synth_xilinx -top dense_pe
+tee -o reports/dense_report.txt stat
+
+# Clear memory
+design -reset
+
+# 2. Analyze Sparse (Yours)
+read_verilog rtl/sparse_pe.v
+synth_xilinx -top sparse_pe
+tee -o reports/sparse_report.txt stat
