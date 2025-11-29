@@ -1,0 +1,1 @@
+read_verilog dense_pe.v; synth_xilinx -top dense_pe; tee -o dense_report.txt stat; design -reset; read_verilog sparse_pe.v; synth_xilinx -top sparse_pe; tee -o sparse_report.txt stat;

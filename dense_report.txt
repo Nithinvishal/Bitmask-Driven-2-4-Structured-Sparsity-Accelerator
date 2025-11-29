@@ -1,0 +1,27 @@
+
+3. Printing statistics.
+
+=== dense_pe ===
+
+   Number of wires:                173
+   Number of wire bits:            516
+   Number of public wires:          13
+   Number of public wire bits:      98
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                325
+     BUFG                            1
+     CARRY4                          3
+     FDCE                           11
+     IBUF                           34
+     INV                            11
+     LUT2                           11
+     LUT3                            7
+     LUT4                           25
+     LUT5                           17
+     LUT6                          117
+     MUXF7                          42
+     MUXF8                          14
+     OBUF                           32
+

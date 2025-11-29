@@ -1,0 +1,25 @@
+
+6. Printing statistics.
+
+=== sparse_pe ===
+
+   Number of wires:                 89
+   Number of wire bits:            360
+   Number of public wires:          13
+   Number of public wire bits:      94
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                177
+     BUFG                            1
+     DSP48E1                         2
+     FDCE                           32
+     IBUF                           38
+     INV                            32
+     LUT4                            8
+     LUT5                           12
+     LUT6                            4
+     MUXF7                          12
+     MUXF8                           4
+     OBUF                           32
+
