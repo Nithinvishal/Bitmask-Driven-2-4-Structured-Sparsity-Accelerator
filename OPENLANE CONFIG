@@ -1,0 +1,16 @@
+The settings used for the physical chip layout.
+OPENLANE
+
+{
+    "DESIGN_NAME": "sparse_pe",
+    "VERILOG_FILES": "dir::sparse_pe.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10.0,
+    "DIE_AREA": "0 0 300 300",
+    "FP_SIZING": "absolute",
+    "FP_PDN_VOFFSET": 0,
+    "FP_PDN_VPITCH": 20,
+    "FP_PDN_HOFFSET": 0,
+    "FP_PDN_HPITCH": 20,
+    "PL_TARGET_DENSITY": 0.50
+}
