@@ -1,0 +1,25 @@
+Verilog code 
+Perfer ICARUS VERILOG
+
+module dense_pe (
+    input clk, rst_n,
+    // 32 bits to hold four 8-bit numbers (Standard INT8 AI)
+    input [31:0] inputs,
+    input [31:0] weights,
+    output reg [31:0] result
+);
+    wire [7:0] a0, a1, a2, a3;
+    wire [7:0] w0, w1, w2, w3;
+
+    // Unpack 8-bit values
+    assign a0 = inputs[7:0];   assign w0 = weights[7:0];
+    assign a1 = inputs[15:8];  assign w1 = weights[15:8];
+    assign a2 = inputs[23:16]; assign w2 = weights[23:16];
+    assign a3 = inputs[31:24]; assign w3 = weights[31:24];
+
+    always @(posedge clk or negedge rst_n) begin
+        if (!rst_n) result <= 0;
+        // 8-bit x 8-bit is complex enough to force DSP usage in Yosys
+        else result <= (a0 * w0) + (a1 * w1) + (a2 * w2) + (a3 * w3);
+    end
+endmodule
